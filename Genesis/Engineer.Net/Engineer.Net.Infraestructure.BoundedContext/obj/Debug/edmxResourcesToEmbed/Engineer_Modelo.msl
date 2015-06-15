@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EngineerDataBaseModelStoreContainer" CdmEntityContainer="EngineerDataBaseEntities">
+    <EntitySetMapping Name="CK_Customers">
+      <EntityTypeMapping TypeName="EngineerDataBaseModel.CK_Customers">
+        <MappingFragment StoreEntitySet="CK_Customers">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="InvoicePrefit" ColumnName="InvoicePrefit" />
+          <ScalarProperty Name="CreditDays" ColumnName="CreditDays" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EG_AdminWebSessions">
+      <EntityTypeMapping TypeName="EngineerDataBaseModel.EG_AdminWebSessions">
+        <MappingFragment StoreEntitySet="EG_AdminWebSessions">
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="ClientContact" ColumnName="ClientContact" />
+          <ScalarProperty Name="ClientContactEmail" ColumnName="ClientContactEmail" />
+          <ScalarProperty Name="DateLastSessionStart" ColumnName="DateLastSessionStart" />
+          <ScalarProperty Name="DateLastSessionEnd" ColumnName="DateLastSessionEnd" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="RecEnabled" ColumnName="RecEnabled" />
+          <ScalarProperty Name="ClientContactPhoneN" ColumnName="ClientContactPhoneN" />
+          <ScalarProperty Name="SessionPwd" ColumnName="SessionPwd" />
+          <ScalarProperty Name="AccessLevel" ColumnName="AccessLevel" />
+          <ScalarProperty Name="CanViewPrices" ColumnName="CanViewPrices" />
+          <ScalarProperty Name="CanQuote" ColumnName="CanQuote" />
+          <ScalarProperty Name="CanAproveLotePrecio" ColumnName="CanAproveLotePrecio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EG_SRFAttachedFiles">
+      <EntityTypeMapping TypeName="EngineerDataBaseModel.EG_SRFAttachedFiles">
+        <MappingFragment StoreEntitySet="EG_SRFAttachedFiles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SrfNo" ColumnName="SrfNo" />
+          <ScalarProperty Name="AttachedFile" ColumnName="AttachedFile" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EG_SRFColorNew">
+      <EntityTypeMapping TypeName="EngineerDataBaseModel.EG_SRFColorNew">
+        <MappingFragment StoreEntitySet="EG_SRFColorNew">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SrfNo" ColumnName="SrfNo" />
+          <ScalarProperty Name="ColorCode" ColumnName="ColorCode" />
+          <ScalarProperty Name="ColorStandard" ColumnName="ColorStandard" />
+          <ScalarProperty Name="ColorWidth" ColumnName="ColorWidth" />
+          <ScalarProperty Name="ColorMainQty" ColumnName="ColorMainQty" />
+          <ScalarProperty Name="ColorCompQty" ColumnName="ColorCompQty" />
+          <ScalarProperty Name="ColorSubmition" ColumnName="ColorSubmition" />
+          <ScalarProperty Name="ClientInstructions" ColumnName="ClientInstructions" />
+          <ScalarProperty Name="ProcessInstructions" ColumnName="ProcessInstructions" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Status2" ColumnName="Status2" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="ColorRef" ColumnName="ColorRef" />
+          <ScalarProperty Name="DevelopmentNo" ColumnName="DevelopmentNo" />
+          <ScalarProperty Name="ColorDescp" ColumnName="ColorDescp" />
+          <ScalarProperty Name="CoralCode" ColumnName="CoralCode" />
+          <ScalarProperty Name="DateReq" ColumnName="DateReq" />
+          <ScalarProperty Name="DateAct" ColumnName="DateAct" />
+          <ScalarProperty Name="DateRel" ColumnName="DateRel" />
+          <ScalarProperty Name="DateExp" ColumnName="DateExp" />
+          <ScalarProperty Name="Season" ColumnName="Season" />
+          <ScalarProperty Name="ExportGuia" ColumnName="ExportGuia" />
+          <ScalarProperty Name="DateAPR" ColumnName="DateAPR" />
+          <ScalarProperty Name="DateReqProg" ColumnName="DateReqProg" />
+          <ScalarProperty Name="VoidComments" ColumnName="VoidComments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EG_SRFColorRequest">
+      <EntityTypeMapping TypeName="EngineerDataBaseModel.EG_SRFColorRequest">
+        <MappingFragment StoreEntitySet="EG_SRFColorRequest">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SrfNo" ColumnName="SrfNo" />
+          <ScalarProperty Name="ColorCode" ColumnName="ColorCode" />
+          <ScalarProperty Name="CoralCode" ColumnName="CoralCode" />
+          <ScalarProperty Name="ColorStandard" ColumnName="ColorStandard" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="ColorWidth" ColumnName="ColorWidth" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="SubClient" ColumnName="SubClient" />
+          <ScalarProperty Name="ColorMainQty" ColumnName="ColorMainQty" />
+          <ScalarProperty Name="ColorCompQty" ColumnName="ColorCompQty" />
+          <ScalarProperty Name="ColorDescp" ColumnName="ColorDescp" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ComponentWidth" ColumnName="ComponentWidth" />
+          <ScalarProperty Name="FabricSubmition" ColumnName="FabricSubmition" />
+          <ScalarProperty Name="ClientInstructions" ColumnName="ClientInstructions" />
+          <ScalarProperty Name="ProcessInstructions" ColumnName="ProcessInstructions" />
+          <ScalarProperty Name="Status1" ColumnName="Status1" />
+          <ScalarProperty Name="Status2" ColumnName="Status2" />
+          <ScalarProperty Name="DateReq" ColumnName="DateReq" />
+          <ScalarProperty Name="DateAct" ColumnName="DateAct" />
+          <ScalarProperty Name="DateRel" ColumnName="DateRel" />
+          <ScalarProperty Name="DateExp" ColumnName="DateExp" />
+          <ScalarProperty Name="DateApr" ColumnName="DateApr" />
+          <ScalarProperty Name="FabricType" ColumnName="FabricType" />
+          <ScalarProperty Name="ComponentType" ColumnName="ComponentType" />
+          <ScalarProperty Name="CutStyle" ColumnName="CutStyle" />
+          <ScalarProperty Name="Skuno" ColumnName="Skuno" />
+          <ScalarProperty Name="ShrinkLength" ColumnName="ShrinkLength" />
+          <ScalarProperty Name="ShrinkWeight" ColumnName="ShrinkWeight" />
+          <ScalarProperty Name="FabricWeight" ColumnName="FabricWeight" />
+          <ScalarProperty Name="VoidComments" ColumnName="VoidComments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EG_SrfDyeSpecialFinishes">
+      <EntityTypeMapping TypeName="EngineerDataBaseModel.EG_SrfDyeSpecialFinishes">
+        <MappingFragment StoreEntitySet="EG_SrfDyeSpecialFinishes">
+          <ScalarProperty Name="SrfNo" ColumnName="SrfNo" />
+          <ScalarProperty Name="SpecialFinishID" ColumnName="SpecialFinishID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EG_SrfFabricSpecialFinishes">
+      <EntityTypeMapping TypeName="EngineerDataBaseModel.EG_SrfFabricSpecialFinishes">
+        <MappingFragment StoreEntitySet="EG_SrfFabricSpecialFinishes">
+          <ScalarProperty Name="SrfNo" ColumnName="SrfNo" />
+          <ScalarProperty Name="SpecialFinishID" ColumnName="SpecialFinishID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EG_SRFSpcColorList">
+      <EntityTypeMapping TypeName="EngineerDataBaseModel.EG_SRFSpcColorList">
+        <MappingFragment StoreEntitySet="EG_SRFSpcColorList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SrfNo" ColumnName="SrfNo" />
+          <ScalarProperty Name="ColorCode" ColumnName="ColorCode" />
+          <ScalarProperty Name="CoralCode" ColumnName="CoralCode" />
+          <ScalarProperty Name="ColorDescp" ColumnName="ColorDescp" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EG_SRFSpcFabricList">
+      <EntityTypeMapping TypeName="EngineerDataBaseModel.EG_SRFSpcFabricList">
+        <MappingFragment StoreEntitySet="EG_SRFSpcFabricList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SrfNo" ColumnName="SrfNo" />
+          <ScalarProperty Name="ComponentType" ColumnName="ComponentType" />
+          <ScalarProperty Name="FabricType" ColumnName="FabricType" />
+          <ScalarProperty Name="Skuno" ColumnName="Skuno" />
+          <ScalarProperty Name="GenericSkuno" ColumnName="GenericSkuno" />
+          <ScalarProperty Name="ReferencedSrfNo" ColumnName="ReferencedSrfNo" />
+          <ScalarProperty Name="ReferencedFabricId" ColumnName="ReferencedFabricId" />
+          <ScalarProperty Name="ShrinkLength" ColumnName="ShrinkLength" />
+          <ScalarProperty Name="ShrinkWeight" ColumnName="ShrinkWeight" />
+          <ScalarProperty Name="FabricWeight" ColumnName="FabricWeight" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EG_SRFSpcFabricWidthDetail">
+      <EntityTypeMapping TypeName="EngineerDataBaseModel.EG_SRFSpcFabricWidthDetail">
+        <MappingFragment StoreEntitySet="EG_SRFSpcFabricWidthDetail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WidthId" ColumnName="WidthId" />
+          <ScalarProperty Name="FabricId" ColumnName="FabricId" />
+          <ScalarProperty Name="SrfNo" ColumnName="SrfNo" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="RequestedPounds" ColumnName="RequestedPounds" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EG_SRFSpcWidthList">
+      <EntityTypeMapping TypeName="EngineerDataBaseModel.EG_SRFSpcWidthList">
+        <MappingFragment StoreEntitySet="EG_SRFSpcWidthList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SrfNo" ColumnName="SrfNo" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="ColorWidth" ColumnName="ColorWidth" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="VoidComments" ColumnName="VoidComments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EG_SrfStyleEspec">
+      <EntityTypeMapping TypeName="EngineerDataBaseModel.EG_SrfStyleEspec">
+        <MappingFragment StoreEntitySet="EG_SrfStyleEspec">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SrfNo" ColumnName="SrfNo" />
+          <ScalarProperty Name="Component" ColumnName="Component" />
+          <ScalarProperty Name="ComponentType" ColumnName="ComponentType" />
+          <ScalarProperty Name="ShrinkLength" ColumnName="ShrinkLength" />
+          <ScalarProperty Name="ShrinkWeight" ColumnName="ShrinkWeight" />
+          <ScalarProperty Name="FabricWeight" ColumnName="FabricWeight" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Skuno" ColumnName="Skuno" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EG_SrfStyleEspecYarn">
+      <EntityTypeMapping TypeName="EngineerDataBaseModel.EG_SrfStyleEspecYarn">
+        <MappingFragment StoreEntitySet="EG_SrfStyleEspecYarn">
+          <ScalarProperty Name="LinkCode" ColumnName="LinkCode" />
+          <ScalarProperty Name="SrfNo" ColumnName="SrfNo" />
+          <ScalarProperty Name="YarnType" ColumnName="YarnType" />
+          <ScalarProperty Name="YarnCount" ColumnName="YarnCount" />
+          <ScalarProperty Name="YarnComposition" ColumnName="YarnComposition" />
+          <ScalarProperty Name="YarnCondition" ColumnName="YarnCondition" />
+          <ScalarProperty Name="YarnCodeComp" ColumnName="YarnCodeComp" />
+          <ScalarProperty Name="Skuno" ColumnName="Skuno" />
+          <ScalarProperty Name="PendingYarn" ColumnName="PendingYarn" />
+          <ScalarProperty Name="FabricId" ColumnName="FabricId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EG_SRFWebHeader">
+      <EntityTypeMapping TypeName="EngineerDataBaseModel.EG_SRFWebHeader">
+        <MappingFragment StoreEntitySet="EG_SRFWebHeader">
+          <ScalarProperty Name="SrfNo" ColumnName="SrfNo" />
+          <ScalarProperty Name="SrfNoReference" ColumnName="SrfNoReference" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Status2" ColumnName="Status2" />
+          <ScalarProperty Name="Status3" ColumnName="Status3" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="DateRelease" ColumnName="DateRelease" />
+          <ScalarProperty Name="DateApr" ColumnName="DateApr" />
+          <ScalarProperty Name="DateDeliver" ColumnName="DateDeliver" />
+          <ScalarProperty Name="DateDeliverSche" ColumnName="DateDeliverSche" />
+          <ScalarProperty Name="ReferenceIn" ColumnName="ReferenceIn" />
+          <ScalarProperty Name="ReferenceOut" ColumnName="ReferenceOut" />
+          <ScalarProperty Name="SubClient" ColumnName="SubClient" />
+          <ScalarProperty Name="CutStyle" ColumnName="CutStyle" />
+          <ScalarProperty Name="ExportContainer" ColumnName="ExportContainer" />
+          <ScalarProperty Name="ExportComments" ColumnName="ExportComments" />
+          <ScalarProperty Name="TestMethod" ColumnName="TestMethod" />
+          <ScalarProperty Name="TestSprint" ColumnName="TestSprint" />
+          <ScalarProperty Name="TestStandard" ColumnName="TestStandard" />
+          <ScalarProperty Name="Garment" ColumnName="Garment" />
+          <ScalarProperty Name="GarmenWash" ColumnName="GarmenWash" />
+          <ScalarProperty Name="FabricEsp" ColumnName="FabricEsp" />
+          <ScalarProperty Name="StyleMainComponet" ColumnName="StyleMainComponet" />
+          <ScalarProperty Name="TypeTran" ColumnName="TypeTran" />
+          <ScalarProperty Name="SessionId" ColumnName="SessionId" />
+          <ScalarProperty Name="YarnAvailable" ColumnName="YarnAvailable" />
+          <ScalarProperty Name="ScreenPrint" ColumnName="ScreenPrint" />
+          <ScalarProperty Name="CTL" ColumnName="CTL" />
+          <ScalarProperty Name="Blends" ColumnName="Blends" />
+          <ScalarProperty Name="SampleDevelopment" ColumnName="SampleDevelopment" />
+          <ScalarProperty Name="YarnETA" ColumnName="YarnETA" />
+          <ScalarProperty Name="CheckWeight" ColumnName="CheckWeight" />
+          <ScalarProperty Name="SampleSize" ColumnName="SampleSize" />
+          <ScalarProperty Name="ApprovalComments" ColumnName="ApprovalComments" />
+          <ScalarProperty Name="GeneralComments" ColumnName="GeneralComments" />
+          <ScalarProperty Name="AttachedFiles" ColumnName="AttachedFiles" />
+          <ScalarProperty Name="DateExp" ColumnName="DateExp" />
+          <ScalarProperty Name="SpecialFinish" ColumnName="SpecialFinish" />
+          <ScalarProperty Name="CustNo" ColumnName="CustNo" />
+          <ScalarProperty Name="VoidComments" ColumnName="VoidComments" />
+          <ScalarProperty Name="IsPique" ColumnName="IsPique" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

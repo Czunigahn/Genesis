@@ -1,0 +1,12 @@
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Presentation.BoundedContext\Bin\Debug\Engineer.Net.Presentation.BoundedContext.dll
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Presentation.BoundedContext\Bin\Debug\Engineer.Net.Presentation.BoundedContext.pdb
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Presentation.BoundedContext\Bin\Debug\AppManifest.xaml
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Presentation.BoundedContext\Bin\Debug\Engineer.Net.Presentation.BoundedContext.xap
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Presentation.BoundedContext\Bin\Debug\Engineer.Net.Presentation.BoundedContextTestPage.html
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Presentation.BoundedContext\obj\Debug\Engineer.Net.Presentation.BoundedContext.csprojResolveAssemblyReference.cache
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Presentation.BoundedContext\obj\Debug\App.g.cs
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Presentation.BoundedContext\obj\Debug\DesarrolloProducto\Views\MainPage.g.cs
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Presentation.BoundedContext\obj\Debug\Engineer.Net.Presentation.BoundedContext.g.resources
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Presentation.BoundedContext\obj\Debug\Engineer.Net.Presentation.BoundedContext.dll
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Presentation.BoundedContext\obj\Debug\Engineer.Net.Presentation.BoundedContext.pdb
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Presentation.BoundedContext\obj\Debug\XapCacheFile.xml

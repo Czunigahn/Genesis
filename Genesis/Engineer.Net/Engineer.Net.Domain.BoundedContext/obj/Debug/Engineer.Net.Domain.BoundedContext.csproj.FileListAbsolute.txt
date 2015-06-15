@@ -1,0 +1,5 @@
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Domain.BoundedContext\bin\Debug\Engineer.Net.Domain.BoundedContext.dll
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Domain.BoundedContext\bin\Debug\Engineer.Net.Domain.BoundedContext.pdb
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Domain.BoundedContext\obj\Debug\Engineer.Net.Domain.BoundedContext.csprojResolveAssemblyReference.cache
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Domain.BoundedContext\obj\Debug\Engineer.Net.Domain.BoundedContext.dll
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Domain.BoundedContext\obj\Debug\Engineer.Net.Domain.BoundedContext.pdb

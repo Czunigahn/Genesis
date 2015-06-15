@@ -1,0 +1,5 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="Engineer.Net.Presentation.BoundedContext" EntryPointType="Engineer.Net.Presentation.BoundedContext.App" RuntimeVersion="5.0.61118.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="Engineer.Net.Presentation.BoundedContext" Source="Engineer.Net.Presentation.BoundedContext.dll" />
+  </Deployment.Parts>
+</Deployment>

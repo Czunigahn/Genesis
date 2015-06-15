@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EngineerDataBaseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EngineerDataBaseModelStoreContainer">
+    <EntitySet Name="CK_Customers" EntityType="EngineerDataBaseModel.Store.CK_Customers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EG_AdminWebSessions" EntityType="EngineerDataBaseModel.Store.EG_AdminWebSessions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EG_SRFAttachedFiles" EntityType="EngineerDataBaseModel.Store.EG_SRFAttachedFiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EG_SRFColorNew" EntityType="EngineerDataBaseModel.Store.EG_SRFColorNew" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EG_SRFColorRequest" EntityType="EngineerDataBaseModel.Store.EG_SRFColorRequest" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EG_SrfDyeSpecialFinishes" EntityType="EngineerDataBaseModel.Store.EG_SrfDyeSpecialFinishes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EG_SrfFabricSpecialFinishes" EntityType="EngineerDataBaseModel.Store.EG_SrfFabricSpecialFinishes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EG_SRFSpcColorList" EntityType="EngineerDataBaseModel.Store.EG_SRFSpcColorList" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EG_SRFSpcFabricList" EntityType="EngineerDataBaseModel.Store.EG_SRFSpcFabricList" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EG_SRFSpcFabricWidthDetail" EntityType="EngineerDataBaseModel.Store.EG_SRFSpcFabricWidthDetail" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EG_SRFSpcWidthList" EntityType="EngineerDataBaseModel.Store.EG_SRFSpcWidthList" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EG_SrfStyleEspec" EntityType="EngineerDataBaseModel.Store.EG_SrfStyleEspec" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EG_SrfStyleEspecYarn" EntityType="EngineerDataBaseModel.Store.EG_SrfStyleEspecYarn" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EG_SRFWebHeader" EntityType="EngineerDataBaseModel.Store.EG_SRFWebHeader" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_EG_SRFAttachedFiles_EG_SRFWebHeader" Association="EngineerDataBaseModel.Store.FK_EG_SRFAttachedFiles_EG_SRFWebHeader">
+      <End Role="EG_SRFWebHeader" EntitySet="EG_SRFWebHeader" />
+      <End Role="EG_SRFAttachedFiles" EntitySet="EG_SRFAttachedFiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EG_SRFColorRequest_EG_SRFWebHeader" Association="EngineerDataBaseModel.Store.FK_EG_SRFColorRequest_EG_SRFWebHeader">
+      <End Role="EG_SRFWebHeader" EntitySet="EG_SRFWebHeader" />
+      <End Role="EG_SRFColorRequest" EntitySet="EG_SRFColorRequest" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EG_SrfDyeSpecialFinishes_EG_SRFWebHeader" Association="EngineerDataBaseModel.Store.FK_EG_SrfDyeSpecialFinishes_EG_SRFWebHeader">
+      <End Role="EG_SRFWebHeader" EntitySet="EG_SRFWebHeader" />
+      <End Role="EG_SrfDyeSpecialFinishes" EntitySet="EG_SrfDyeSpecialFinishes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EG_SrfFabricSpecialFinishes_EG_SRFWebHeader" Association="EngineerDataBaseModel.Store.FK_EG_SrfFabricSpecialFinishes_EG_SRFWebHeader">
+      <End Role="EG_SRFWebHeader" EntitySet="EG_SRFWebHeader" />
+      <End Role="EG_SrfFabricSpecialFinishes" EntitySet="EG_SrfFabricSpecialFinishes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EG_SRFSpcFabricWidthDetail_EG_SRFSpcFabricList" Association="EngineerDataBaseModel.Store.FK_EG_SRFSpcFabricWidthDetail_EG_SRFSpcFabricList">
+      <End Role="EG_SRFSpcFabricList" EntitySet="EG_SRFSpcFabricList" />
+      <End Role="EG_SRFSpcFabricWidthDetail" EntitySet="EG_SRFSpcFabricWidthDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EG_SRFSpcFabricWidthDetail_EG_SRFSpcWidthList" Association="EngineerDataBaseModel.Store.FK_EG_SRFSpcFabricWidthDetail_EG_SRFSpcWidthList">
+      <End Role="EG_SRFSpcWidthList" EntitySet="EG_SRFSpcWidthList" />
+      <End Role="EG_SRFSpcFabricWidthDetail" EntitySet="EG_SRFSpcFabricWidthDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EG_SRFSpcWidthList_EG_SRFWebHeader" Association="EngineerDataBaseModel.Store.FK_EG_SRFSpcWidthList_EG_SRFWebHeader">
+      <End Role="EG_SRFWebHeader" EntitySet="EG_SRFWebHeader" />
+      <End Role="EG_SRFSpcWidthList" EntitySet="EG_SRFSpcWidthList" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CK_Customers">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="Customer" Type="varchar" MaxLength="30" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="InvoicePrefit" Type="varchar" MaxLength="15" />
+    <Property Name="CreditDays" Type="int" />
+  </EntityType>
+  <EntityType Name="EG_AdminWebSessions">
+    <Key>
+      <PropertyRef Name="SessionId" />
+    </Key>
+    <Property Name="SessionId" Type="varchar" Nullable="false" MaxLength="15" />
+    <Property Name="ClientId" Type="varchar" MaxLength="15" />
+    <Property Name="ClientContact" Type="varchar" MaxLength="100" />
+    <Property Name="ClientContactEmail" Type="varchar" MaxLength="50" />
+    <Property Name="DateLastSessionStart" Type="datetime" />
+    <Property Name="DateLastSessionEnd" Type="datetime" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="CreateBy" Type="varchar" MaxLength="15" />
+    <Property Name="RecEnabled" Type="varchar" MaxLength="1" />
+    <Property Name="ClientContactPhoneN" Type="varchar" MaxLength="25" />
+    <Property Name="SessionPwd" Type="varchar(max)" />
+    <Property Name="AccessLevel" Type="varchar" MaxLength="20" />
+    <Property Name="CanViewPrices" Type="varchar" MaxLength="1" />
+    <Property Name="CanQuote" Type="varchar" MaxLength="1" />
+    <Property Name="CanAproveLotePrecio" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="EG_SRFAttachedFiles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SrfNo" Type="varchar" MaxLength="20" />
+    <Property Name="AttachedFile" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="FileName" Type="varchar" Nullable="false" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="EG_SRFColorNew">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="SrfNo" Type="varchar" MaxLength="20" />
+    <Property Name="ColorCode" Type="varchar" MaxLength="10" />
+    <Property Name="ColorStandard" Type="varchar" MaxLength="100" />
+    <Property Name="ColorWidth" Type="varchar" MaxLength="5" />
+    <Property Name="ColorMainQty" Type="int" />
+    <Property Name="ColorCompQty" Type="int" />
+    <Property Name="ColorSubmition" Type="int" />
+    <Property Name="ClientInstructions" Type="varchar" MaxLength="150" />
+    <Property Name="ProcessInstructions" Type="varchar" MaxLength="150" />
+    <Property Name="Status" Type="varchar" MaxLength="3" />
+    <Property Name="Status2" Type="varchar" MaxLength="3" />
+    <Property Name="Condition" Type="varchar" MaxLength="150" />
+    <Property Name="ColorRef" Type="varchar" MaxLength="25" />
+    <Property Name="DevelopmentNo" Type="varchar" MaxLength="15" />
+    <Property Name="ColorDescp" Type="varchar" MaxLength="50" />
+    <Property Name="CoralCode" Type="varchar" MaxLength="6" />
+    <Property Name="DateReq" Type="datetime" />
+    <Property Name="DateAct" Type="datetime" />
+    <Property Name="DateRel" Type="datetime" />
+    <Property Name="DateExp" Type="datetime" />
+    <Property Name="Season" Type="varchar" MaxLength="50" />
+    <Property Name="ExportGuia" Type="varchar" MaxLength="100" />
+    <Property Name="DateAPR" Type="datetime" />
+    <Property Name="DateReqProg" Type="datetime" />
+    <Property Name="VoidComments" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="EG_SRFColorRequest">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="SrfNo" Type="varchar" MaxLength="20" />
+    <Property Name="ColorCode" Type="varchar" MaxLength="10" />
+    <Property Name="CoralCode" Type="varchar" MaxLength="50" />
+    <Property Name="ColorStandard" Type="varchar" MaxLength="100" />
+    <Property Name="Size" Type="varchar" MaxLength="5" />
+    <Property Name="ColorWidth" Type="varchar" MaxLength="5" />
+    <Property Name="Height" Type="varchar" MaxLength="5" />
+    <Property Name="SubClient" Type="varchar" MaxLength="10" />
+    <Property Name="ColorMainQty" Type="int" />
+    <Property Name="ColorCompQty" Type="int" />
+    <Property Name="ColorDescp" Type="varchar" MaxLength="50" />
+    <Property Name="Status" Type="varchar" MaxLength="3" />
+    <Property Name="ComponentWidth" Type="varchar" MaxLength="5" />
+    <Property Name="FabricSubmition" Type="int" />
+    <Property Name="ClientInstructions" Type="varchar" MaxLength="150" />
+    <Property Name="ProcessInstructions" Type="varchar" MaxLength="150" />
+    <Property Name="Status1" Type="varchar" MaxLength="3" />
+    <Property Name="Status2" Type="varchar" MaxLength="3" />
+    <Property Name="DateReq" Type="datetime" />
+    <Property Name="DateAct" Type="datetime" />
+    <Property Name="DateRel" Type="datetime" />
+    <Property Name="DateExp" Type="datetime" />
+    <Property Name="DateApr" Type="datetime" />
+    <Property Name="FabricType" Type="varchar" MaxLength="5" />
+    <Property Name="ComponentType" Type="varchar" MaxLength="4" />
+    <Property Name="CutStyle" Type="varchar" MaxLength="30" />
+    <Property Name="Skuno" Type="varchar" MaxLength="20" />
+    <Property Name="ShrinkLength" Type="int" />
+    <Property Name="ShrinkWeight" Type="int" />
+    <Property Name="FabricWeight" Type="numeric" Precision="6" Scale="2" />
+    <Property Name="VoidComments" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="EG_SrfDyeSpecialFinishes">
+    <Key>
+      <PropertyRef Name="SrfNo" />
+      <PropertyRef Name="SpecialFinishID" />
+    </Key>
+    <Property Name="SrfNo" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="SpecialFinishID" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EG_SrfFabricSpecialFinishes">
+    <Key>
+      <PropertyRef Name="SrfNo" />
+      <PropertyRef Name="SpecialFinishID" />
+    </Key>
+    <Property Name="SrfNo" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="SpecialFinishID" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EG_SRFSpcColorList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SrfNo" Type="varchar" MaxLength="20" />
+    <Property Name="ColorCode" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="CoralCode" Type="varchar" Nullable="false" MaxLength="6" />
+    <Property Name="ColorDescp" Type="varchar" MaxLength="70" />
+    <Property Name="Status" Type="varchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="EG_SRFSpcFabricList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SrfNo" Type="varchar" MaxLength="20" />
+    <Property Name="ComponentType" Type="varchar" MaxLength="4" />
+    <Property Name="FabricType" Type="varchar" MaxLength="5" />
+    <Property Name="Skuno" Type="varchar" MaxLength="20" />
+    <Property Name="GenericSkuno" Type="varchar" MaxLength="20" />
+    <Property Name="ReferencedSrfNo" Type="varchar" MaxLength="20" />
+    <Property Name="ReferencedFabricId" Type="int" />
+    <Property Name="ShrinkLength" Type="int" />
+    <Property Name="ShrinkWeight" Type="int" />
+    <Property Name="FabricWeight" Type="numeric" Precision="6" Scale="2" />
+  </EntityType>
+  <EntityType Name="EG_SRFSpcFabricWidthDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="WidthId" Type="int" Nullable="false" />
+    <Property Name="FabricId" Type="int" Nullable="false" />
+    <Property Name="SrfNo" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Width" Type="varchar" MaxLength="5" />
+    <Property Name="Height" Type="varchar" MaxLength="5" />
+    <Property Name="RequestedPounds" Type="numeric" Precision="6" Scale="2" />
+  </EntityType>
+  <EntityType Name="EG_SRFSpcWidthList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SrfNo" Type="varchar" MaxLength="20" />
+    <Property Name="Size" Type="varchar" MaxLength="5" />
+    <Property Name="ColorWidth" Type="varchar" MaxLength="5" />
+    <Property Name="Status" Type="varchar" MaxLength="3" />
+    <Property Name="VoidComments" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="EG_SrfStyleEspec">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="SrfNo" Type="varchar" MaxLength="20" />
+    <Property Name="Component" Type="varchar" MaxLength="5" />
+    <Property Name="ComponentType" Type="varchar" MaxLength="4" />
+    <Property Name="ShrinkLength" Type="int" />
+    <Property Name="ShrinkWeight" Type="int" />
+    <Property Name="FabricWeight" Type="numeric" Precision="6" Scale="2" />
+    <Property Name="Quantity" Type="numeric" Precision="6" Scale="3" />
+    <Property Name="Skuno" Type="varchar" MaxLength="20" />
+    <Property Name="Condition" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="EG_SrfStyleEspecYarn">
+    <Key>
+      <PropertyRef Name="LinkCode" />
+      <PropertyRef Name="YarnType" />
+      <PropertyRef Name="YarnCount" />
+      <PropertyRef Name="YarnComposition" />
+      <PropertyRef Name="YarnCondition" />
+      <PropertyRef Name="Skuno" />
+    </Key>
+    <Property Name="LinkCode" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="SrfNo" Type="varchar" MaxLength="20" />
+    <Property Name="YarnType" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="YarnCount" Type="varchar" Nullable="false" MaxLength="8" />
+    <Property Name="YarnComposition" Type="varchar" Nullable="false" MaxLength="120" />
+    <Property Name="YarnCondition" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="YarnCodeComp" Type="varchar" MaxLength="10" />
+    <Property Name="Skuno" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="PendingYarn" Type="bit" />
+    <Property Name="FabricId" Type="int" />
+  </EntityType>
+  <EntityType Name="EG_SRFWebHeader">
+    <Key>
+      <PropertyRef Name="SrfNo" />
+    </Key>
+    <Property Name="SrfNo" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="SrfNoReference" Type="varchar" MaxLength="20" />
+    <Property Name="Status" Type="varchar" MaxLength="3" />
+    <Property Name="Status2" Type="varchar" MaxLength="3" />
+    <Property Name="Status3" Type="varchar" MaxLength="3" />
+    <Property Name="DateCreated" Type="datetime" />
+    <Property Name="DateRelease" Type="datetime" />
+    <Property Name="DateApr" Type="datetime" />
+    <Property Name="DateDeliver" Type="datetime" />
+    <Property Name="DateDeliverSche" Type="datetime" />
+    <Property Name="ReferenceIn" Type="varchar" MaxLength="20" />
+    <Property Name="ReferenceOut" Type="varchar" MaxLength="20" />
+    <Property Name="SubClient" Type="varchar" MaxLength="10" />
+    <Property Name="CutStyle" Type="varchar" MaxLength="15" />
+    <Property Name="ExportContainer" Type="varchar" MaxLength="20" />
+    <Property Name="ExportComments" Type="varchar" MaxLength="120" />
+    <Property Name="TestMethod" Type="varchar" MaxLength="120" />
+    <Property Name="TestSprint" Type="varchar" MaxLength="120" />
+    <Property Name="TestStandard" Type="varchar" MaxLength="120" />
+    <Property Name="Garment" Type="varchar" MaxLength="50" />
+    <Property Name="GarmenWash" Type="varchar" MaxLength="120" />
+    <Property Name="FabricEsp" Type="varchar" MaxLength="500" />
+    <Property Name="StyleMainComponet" Type="varchar" MaxLength="30" />
+    <Property Name="TypeTran" Type="varchar" MaxLength="6" />
+    <Property Name="SessionId" Type="varchar" MaxLength="15" />
+    <Property Name="YarnAvailable" Type="smallint" />
+    <Property Name="ScreenPrint" Type="varchar" MaxLength="120" />
+    <Property Name="CTL" Type="varchar" MaxLength="1" />
+    <Property Name="Blends" Type="varchar" MaxLength="120" />
+    <Property Name="SampleDevelopment" Type="varchar" MaxLength="10" />
+    <Property Name="YarnETA" Type="datetime" />
+    <Property Name="CheckWeight" Type="smallint" />
+    <Property Name="SampleSize" Type="varchar" MaxLength="20" />
+    <Property Name="ApprovalComments" Type="varchar" MaxLength="120" />
+    <Property Name="GeneralComments" Type="varchar" MaxLength="120" />
+    <Property Name="AttachedFiles" Type="varchar" MaxLength="120" />
+    <Property Name="DateExp" Type="datetime" />
+    <Property Name="SpecialFinish" Type="varchar" MaxLength="120" />
+    <Property Name="CustNo" Type="varchar" MaxLength="15" />
+    <Property Name="VoidComments" Type="varchar(max)" />
+    <Property Name="IsPique" Type="varchar" MaxLength="1" />
+  </EntityType>
+  <Association Name="FK_EG_SRFAttachedFiles_EG_SRFWebHeader">
+    <End Role="EG_SRFWebHeader" Type="EngineerDataBaseModel.Store.EG_SRFWebHeader" Multiplicity="0..1" />
+    <End Role="EG_SRFAttachedFiles" Type="EngineerDataBaseModel.Store.EG_SRFAttachedFiles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EG_SRFWebHeader">
+        <PropertyRef Name="SrfNo" />
+      </Principal>
+      <Dependent Role="EG_SRFAttachedFiles">
+        <PropertyRef Name="SrfNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EG_SRFColorRequest_EG_SRFWebHeader">
+    <End Role="EG_SRFWebHeader" Type="EngineerDataBaseModel.Store.EG_SRFWebHeader" Multiplicity="0..1" />
+    <End Role="EG_SRFColorRequest" Type="EngineerDataBaseModel.Store.EG_SRFColorRequest" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EG_SRFWebHeader">
+        <PropertyRef Name="SrfNo" />
+      </Principal>
+      <Dependent Role="EG_SRFColorRequest">
+        <PropertyRef Name="SrfNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EG_SrfDyeSpecialFinishes_EG_SRFWebHeader">
+    <End Role="EG_SRFWebHeader" Type="EngineerDataBaseModel.Store.EG_SRFWebHeader" Multiplicity="1" />
+    <End Role="EG_SrfDyeSpecialFinishes" Type="EngineerDataBaseModel.Store.EG_SrfDyeSpecialFinishes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EG_SRFWebHeader">
+        <PropertyRef Name="SrfNo" />
+      </Principal>
+      <Dependent Role="EG_SrfDyeSpecialFinishes">
+        <PropertyRef Name="SrfNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EG_SrfFabricSpecialFinishes_EG_SRFWebHeader">
+    <End Role="EG_SRFWebHeader" Type="EngineerDataBaseModel.Store.EG_SRFWebHeader" Multiplicity="1" />
+    <End Role="EG_SrfFabricSpecialFinishes" Type="EngineerDataBaseModel.Store.EG_SrfFabricSpecialFinishes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EG_SRFWebHeader">
+        <PropertyRef Name="SrfNo" />
+      </Principal>
+      <Dependent Role="EG_SrfFabricSpecialFinishes">
+        <PropertyRef Name="SrfNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EG_SRFSpcFabricWidthDetail_EG_SRFSpcFabricList">
+    <End Role="EG_SRFSpcFabricList" Type="EngineerDataBaseModel.Store.EG_SRFSpcFabricList" Multiplicity="1" />
+    <End Role="EG_SRFSpcFabricWidthDetail" Type="EngineerDataBaseModel.Store.EG_SRFSpcFabricWidthDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EG_SRFSpcFabricList">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EG_SRFSpcFabricWidthDetail">
+        <PropertyRef Name="FabricId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EG_SRFSpcFabricWidthDetail_EG_SRFSpcWidthList">
+    <End Role="EG_SRFSpcWidthList" Type="EngineerDataBaseModel.Store.EG_SRFSpcWidthList" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="EG_SRFSpcFabricWidthDetail" Type="EngineerDataBaseModel.Store.EG_SRFSpcFabricWidthDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EG_SRFSpcWidthList">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EG_SRFSpcFabricWidthDetail">
+        <PropertyRef Name="WidthId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EG_SRFSpcWidthList_EG_SRFWebHeader">
+    <End Role="EG_SRFWebHeader" Type="EngineerDataBaseModel.Store.EG_SRFWebHeader" Multiplicity="0..1" />
+    <End Role="EG_SRFSpcWidthList" Type="EngineerDataBaseModel.Store.EG_SRFSpcWidthList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EG_SRFWebHeader">
+        <PropertyRef Name="SrfNo" />
+      </Principal>
+      <Dependent Role="EG_SRFSpcWidthList">
+        <PropertyRef Name="SrfNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,10 @@
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Infraestructure.BoundedContext\bin\Debug\Engineer.Net.Infraestructure.BoundedContext.dll
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Infraestructure.BoundedContext\bin\Debug\Engineer.Net.Infraestructure.BoundedContext.pdb
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Infraestructure.BoundedContext\obj\Debug\Engineer.Net.Infraestructure.BoundedContext.csprojResolveAssemblyReference.cache
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Infraestructure.BoundedContext\obj\Debug\Engineer.Net.Infraestructure.BoundedContext.dll
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Infraestructure.BoundedContext\obj\Debug\Engineer.Net.Infraestructure.BoundedContext.pdb
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Infraestructure.BoundedContext\bin\Debug\EngineerDataBase.mdf
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Infraestructure.BoundedContext\bin\Debug\EngineerDataBase_log.ldf
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Infraestructure.BoundedContext\bin\Debug\Engineer.Net.Infraestructure.BoundedContext.dll.config
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Infraestructure.BoundedContext\bin\Debug\EntityFramework.dll
+C:\Users\ecastellanos\Documents\Visual Studio 2012\Projects\Genesis\Engineer.Net\Engineer.Net.Infraestructure.BoundedContext\bin\Debug\EntityFramework.xml
